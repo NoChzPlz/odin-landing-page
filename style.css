@@ -1,7 +1,7 @@
 html, body {
     display: flex;
     flex-direction: column;
-    font-family: 'Trebuchet MS', sans-serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -42,16 +42,20 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
 }
 
 .photo {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 48px;
+    
 }
 
 .content {
@@ -122,6 +126,7 @@ html, body {
     padding: 32px;
     gap: 56px;
     flex-grow: 1;
+    border-radius: 8px;
 }
 
 .logo {
@@ -134,6 +139,7 @@ html, body {
     height: 100px;
     width: 100px;
     border-radius: 8px;
+    margin-bottom: 4px;
 }
 
 .blocktext {
@@ -150,10 +156,16 @@ html, body {
 }
 
 a{
+    text-decoration: none;
     transition-duration: 0.5s;
 }
 
-a:hover {
+a:visited{
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.hero a:hover {
     display: inline-flex;
     border: solid #e5e7eb 1px;
     background-color:#19212c;
@@ -194,8 +206,40 @@ button:active {
     padding: 4px;
 }
 
+.box button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 4px;
+    box-shadow: 0;
+    width: 100px;
+    height: 24px;
+    border: solid #E5E7EB 2px;
+    padding: 2px;
+}
+
+.box button:hover {
+    background-color: #3177e9;
+    color: #F9FAF8;
+    border-radius: 4px;
+    box-shadow: 0;
+    width: 100px;
+    height: 24px;
+    border:  solid #E5E7EB 2px;
+    padding: 2px;
+}
+
+.box button:active {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    border-radius: 4px;
+    box-shadow: 0;
+    width: 100px;
+    height: 24px;
+    border:  solid #E5E7EB 2px;
+    padding: 4px;
+}
+
 img {
    width: 22%;
    height: auto;
 }
-
